@@ -1,4 +1,4 @@
-[Travic CI](https://travis-ci.com/GagePielsticker/Galaxysim-Reimagined.svg?token=bfVU7nuj6pEJvLPvtLmZ&branch=master&status=unknown)
+![Travic CI](https://travis-ci.com/GagePielsticker/Galaxysim-Reimagined.svg?token=bfVU7nuj6pEJvLPvtLmZ&branch=master&status=unknown)
 # GalaxySim: Re-Imagined
 
 GalaxySim is a space based MMO / RPG where players explore, fight, and colonize the infinite number of star systems and planets.
