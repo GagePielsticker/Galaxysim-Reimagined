@@ -13,3 +13,14 @@ Cronjob process
 marketing process
 - handles pushing guild counts to various sites and getting vote info into database
 
+
+
+REST Info
+endpoint key - af8*Fj**jfsjen#flkj..148
+
+
+Database Info
+
+database defined as 'gsim'
+collections - user, guilds, analytics
+
