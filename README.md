@@ -1,7 +1,7 @@
 ![Travic CI](https://travis-ci.com/GagePielsticker/Galaxysim-Reimagined.svg?token=bfVU7nuj6pEJvLPvtLmZ&branch=master&status=unknown)
 # GalaxySim: Re-Imagined
 
-GalaxySim is a space based MMO / RPG where players explore, fight, and colonize the infinite number of star systems and planets.
+GalaxySim is a space based MMO / RPG where players explore, fight, and colonize the infinite number of randomly generated star systems and planets.
 
 ## Project Structure
 I styled this to be a pseudo-micro service styled backend. This includes seperating out ideas to their own process isntead of a more monolithic approach. This can be potentially harder to maintain but allows for much more flexability when scaling. The project currently has a REST API which handles the core functionality of the game, a bot integration for discord which is pretty much a middleman for api & the end user, a task process which handles all the cronjob / automated task of the game which wouldnt scale well with the rest api, and a marketing process which handles posting data to advertising websites such as Top.gg or bots.gg.
