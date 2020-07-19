@@ -1,0 +1,15 @@
+Bot process
+- Handels discord integration of the API
+
+REST API process
+- handles all functionality & database interactions
+
+Database
+- mongodb
+
+Cronjob process
+- handles all automatic functions such as daily regenerations in game etc
+
+marketing process
+- handles pushing guild counts to various sites and getting vote info into database
+
