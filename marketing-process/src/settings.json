@@ -1,0 +1,18 @@
+{
+  "bot_token": "",
+  "topgg_token": "",
+
+  "post_interval": 300000,
+
+  "webhook_port": 3000,
+  "webhook_auth": "ad#%slkjfl#%askdfjas#%$#%lfj831452#%98352#*(%%(@*uiwttutub#))",
+
+  "mongodb": {
+    "database": "gsim",
+    "collection": "user_analytics",
+    "username": "",
+    "password": "",
+    "host": "localhost",
+    "port": "27017"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "marketing-process",
+  "version": "1.0.0",
+  "description": "A marketing process for galaxysim.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GagePielsticker/Galaxysim-Reimagined/tree/master/marketing-process"
+  },
+  "author": "Gage Pielsticker",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "mongodb": "^3.5.9",
+    "top.gg": "^2.3.2"
+  }
+}
