@@ -8,6 +8,11 @@ I styled this to be a pseudo-micro service styled backend. This includes seperat
 
 Each respective process has more info inside their folders.
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+All code must follow [standardjs](https://standardjs.com/) principles. Keep documentation thorough as well.
+
 ## Gameplay
 
 ### Key Features
@@ -102,6 +107,3 @@ To quickly view your balance use .bal
 Voting on DBL gives user a 20% industry boost for 12 hours.
 
 Thanks to all the voters!~
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
