@@ -19,8 +19,17 @@ REST Info
 endpoint key - af8*Fj**jfsjen#flkj..148
 
 
+MARKETING Info
+webhook auth - ad#%slkjfl#%askdfjas#%$#%lfj831452#%98352#*(%%(@*uiwttutub#))
+
 Database Info
 
+dates stored in unix MS time +new Date()
+
 database defined as 'gsim'
-collections - user, guilds, analytics
+collections:
+  user_data, 
+  user_analytics,
+  bot_analytics
+  guilds
 
