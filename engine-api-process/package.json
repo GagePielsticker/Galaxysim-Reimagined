@@ -1,0 +1,19 @@
+{
+  "name": "engine-api-process",
+  "version": "1.0.0",
+  "description": "Galaxysim Engine Process",
+  "main": "src/index.js",
+  "scripts": {
+    "prod": "node ./src/index.js",
+    "dev": "node ./src/index.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GagePielsticker/Galaxysim-Reimagined/tree/master/engine-api-process"
+  },
+  "author": "Gage Pielsticker",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
