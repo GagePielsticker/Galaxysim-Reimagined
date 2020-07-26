@@ -1,6 +1,8 @@
 const Event = require('../structure/Event');
 const Message = require('../extensions/Message');
 
+const commandHandler = require('../extensions/conmmandHandler');
+
 
 class MessageCreate extends Event{
     constructor(self) {
@@ -10,15 +12,13 @@ class MessageCreate extends Event{
     run(msg) {
         const message = new Message(msg) //! REQUIRED
 
-        if (message.author.bot) return
+        if (message.author.bot || !message.channel.guild) return
         
-        let embed = new this.Embed()
-            .setDescription('Uber is a **MEGA** cute boy')
-            .setTimestamp()
-            .build()
-        
-        
-        if (message.channel.id == 679495746445508619) message.channel.createMessage(embed)
+        if (message.channel.id != 734886474549297183) return
+
+        let guildDB = null
+        let args = message.content.split(' ')
+        commandHandler(this, message, args, guildDB)
     }
 }
 

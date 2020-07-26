@@ -12,7 +12,7 @@ class Message {
             .setTitle(':x: Error')
             .build();
         
-        message.channel.createMessage(embed)
+        this.channel.createMessage(embed)
     }
 }
 
