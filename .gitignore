@@ -88,5 +88,4 @@ typings/
 .dynamodb/
 
 # JSDOC for discord bot
-
 discord-bot-process/docs/
