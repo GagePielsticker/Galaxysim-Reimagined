@@ -11,15 +11,19 @@ class MessageCreate extends Event{
     }
 
     run(msg) {
-        const message = new Message(msg) //! REQUIRED
+        const message = new Message(msg)
+        this._process(message)
+    }
+
+    _process(message) {
 
         if (message.author.bot || !message.channel.guild) return
         
         if (message.channel.id != 734886474549297183) return
 
         let guildDB = null
-        let args = message.content.split(' ')
-        commandHandler(this, message, args, guildDB)
+
+        commandHandler(this, message, guildDB)
     }
 }
 

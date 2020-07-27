@@ -16,7 +16,17 @@ class Eval extends Command {
     }
 
     run(message, args) {
-        message.channel.createMessage('Insert eval repose for `' + args.join(' ') + '` here')
+        let code = args.join(' ')
+
+        if (!code) return message.error('No eval provided')
+        
+        
+        try {
+            let evaled = eval(code)
+            return message.success('```' + evaled + '```')
+        } catch (e) {
+            return message.error('```' + e + '```')
+        }
     }
     
 }

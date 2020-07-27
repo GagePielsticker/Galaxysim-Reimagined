@@ -275,7 +275,7 @@ class Embed {
 
     /**
      * Build the embed
-     * @param {String} textContent Content to send before the emebed
+     * @param {String} textContent Content to send before the embed
      */
     build(textContent = null) {
         let data = this._json

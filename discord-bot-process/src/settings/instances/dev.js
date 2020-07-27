@@ -14,6 +14,6 @@ module.exports = {
     api: {
         host: "localhost",
         port: "3001",
-        key: "UberAndJadeAreSuperCuties+Th1sIsSuperSecureForTheSuperCoolDevVersion"//smh
+        key: "af8*Fj**jfsjen#flkj..148"
     }
 }
