@@ -4,6 +4,9 @@
 GalaxySim is a space based MMO / RPG where players explore, fight, and colonize the infinite number of randomly generated star systems and planets.
 
 ## Project Structure
+
+More info can be found [HERE](./assets/ "HERE")
+
 I styled this to be a pseudo-micro service styled backend. This includes seperating out ideas to their own process isntead of a more monolithic approach. This can be potentially harder to maintain but allows for much more flexability when scaling. The project currently has a REST API which handles the core functionality of the game, a bot integration for discord which is pretty much a middleman for api & the end user, a task process which handles all the cronjob / automated task of the game which wouldnt scale well with the rest api, and a marketing process which handles posting data to advertising websites such as Top.gg or bots.gg.
 
 Each respective process has more info inside their folders.
