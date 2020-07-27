@@ -1,0 +1,24 @@
+{
+  "name": "galaxysim",
+  "version": "0.0.1",
+  "description": "GalaxySim is a space based MMO / RPG where players explore, fight, and colonize the ∞ number of star systems and planets.",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd ./discord-bot-process/ && npm i && cd ../engine-api-process && npm i",
+    "dbotdev": "node ./discord-bot-process/ -d",
+    "apidev": "node ./engine-api-process/src/ -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GagePielsticker/Galaxysim-Reimagined.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Uber, Bowsie, Jade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GagePielsticker/Galaxysim-Reimagined/issues"
+  },
+  "homepage": "https://github.com/GagePielsticker/Galaxysim-Reimagined#readme"
+}
