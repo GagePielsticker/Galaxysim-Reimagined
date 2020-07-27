@@ -1,10 +1,10 @@
 # Project Structure
 
 ### Bot Process
-handles bot interinteraction of the api
+- Handles bot interinteraction of the api
 
 ### REST API process 
-Handles all the functionality & database interactions
+- Handles all the functionality & database interactions
 
 ### Database 
 - Accessed through the API process
@@ -15,7 +15,7 @@ Handles all the functionality & database interactions
 - Regenerations in game
 
 ### Marketing Process
-Handles publishing guild counts to various sites and hosting the voting web hook for rewards
+- Handles publishing guild counts to various sites and hosting the voting web hook for rewards
 
 ### Data
 
@@ -28,7 +28,8 @@ Handles publishing guild counts to various sites and hosting the voting web hook
 - collections: `user_data, user_analytics, bot_analytics, guilds`
 
 #### Dates
-All dates are stored in unix MS time `new Date()`
+- All dates are stored in unix MS time `new Date()`
+
 ### Github commit content
 ```
 **Describe here what you added/deleted/made changes to**
