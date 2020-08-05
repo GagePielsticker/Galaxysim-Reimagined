@@ -1,0 +1,14 @@
+{
+  "api" : {
+    "port" : 3000,
+    "key" : "af8*Fj**jfsjen#flkj..148"
+  },
+
+  "mongo" : {
+    "database": "gsim",
+    "username": "",
+    "password": "",
+    "host": "localhost",
+    "port": "27017"
+  }
+}
