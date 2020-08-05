@@ -3,6 +3,7 @@ const logger = require('../library/logger.js')
 module.exports = client => {
   // QoL
   const game = client.game
+  const settings = require('../settings/game_settings.json')
 
   /**
    * Checks to see if user exist in database
@@ -25,11 +26,16 @@ module.exports = client => {
     return new Promise((resolve, reject) => {
       if (game.doesUserExist(uid)) return reject(new Error('User already has an account in the database.'))
 
+      const factionEntry = settings.filter(e => e.name === faction.toLowerCase())[0]
+      if (!factionEntry) return reject(new Error('Faction does not exist.'))
+
       logger.success(`Created user account ${uid}.`)
 
       return client.database.collection('users').insertOne({
         uid: uid,
-        credits: 0
+        faction: factionEntry.name,
+        credits: 0,
+        createAt: Date.now() / 1000
       })
     })
   }

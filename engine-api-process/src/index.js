@@ -12,7 +12,6 @@ if (process.argv.includes('-d')) {
 } else {
   client.settings = require('./settings/prod_env_settings.json')
 }
-client.settings.game = require('./settings/game_settings.json')
 
 // view engine setup
 const app = express()

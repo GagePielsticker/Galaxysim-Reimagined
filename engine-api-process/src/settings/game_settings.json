@@ -1,1 +1,66 @@
-{}
+{
+  "map": {
+    "x": {
+      "max": 250,
+      "min": -250
+    },
+    "y": {
+      "max": 250,
+      "min": -250
+    }
+  },
+  "factions": [
+    {
+      "name": "faction1",
+      "spawn": {
+        "x": {
+          "max": 250,
+          "min": 0
+        },
+        "y": {
+          "max": 250,
+          "min": 0
+        }
+      }
+    },
+    {
+      "name": "faction2",
+      "spawn": {
+        "x": {
+          "max": 0,
+          "min": -250
+        },
+        "y": {
+          "max": 250,
+          "min": 0
+        }
+      }
+    },
+    {
+      "name": "faction3",
+      "spawn": {
+        "x": {
+          "max": 0,
+          "min": -250
+        },
+        "y": {
+          "max": 0,
+          "min": -250
+        }
+      }
+    },
+    {
+      "name": "faction4",
+      "spawn": {
+        "x": {
+          "max": 250,
+          "min": 0
+        },
+        "y": {
+          "max": 0,
+          "min": -250
+        }
+      }
+    }
+  ]
+}
