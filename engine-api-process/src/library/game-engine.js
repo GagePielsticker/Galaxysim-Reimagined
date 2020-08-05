@@ -29,12 +29,17 @@ module.exports = client => {
       const factionEntry = settings.filter(e => e.name === faction.toLowerCase())[0]
       if (!factionEntry) return reject(new Error('Faction does not exist.'))
 
+      let alphaTester = false
+      if (settings.alpha_testers.includes(uid)) alphaTester = true
+
       logger.success(`Created user account ${uid}.`)
 
       return client.database.collection('users').insertOne({
         uid: uid,
         faction: factionEntry.name,
         alliance: '',
+        alphaTester: alphaTester,
+        betaTester: true,
         bounty: 0,
         credits: 0,
         pos: {
