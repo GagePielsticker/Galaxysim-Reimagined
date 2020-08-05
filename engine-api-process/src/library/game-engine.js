@@ -34,6 +34,10 @@ module.exports = client => {
       return client.database.collection('users').insertOne({
         uid: uid,
         faction: factionEntry.name,
+        pos: {
+          x: Math.floor(Math.random() * (factionEntry.spawn.x.max - factionEntry.spawn.x.min) + factionEntry.spawn.x.min),
+          y: Math.floor(Math.random() * (factionEntry.spawn.y.max - factionEntry.spawn.y.min) + factionEntry.spawn.y.min)
+        },
         credits: 0,
         createAt: Date.now() / 1000
       })
