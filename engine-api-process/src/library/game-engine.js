@@ -17,6 +17,18 @@ module.exports = client => {
   }
 
   /**
+   * Checks to see if tile exist in database
+   * @param {Integer} xPos x position
+   * @param {Integer} yPos y position
+   * @returns {Boolean}
+   */
+  game.doesTileExist = async (xPos, yPos) => {
+    const entry = await client.database.collection('map').findOne({ 'pos.x': xPos, 'pos.y': yPos })
+    if (!entry) return false
+    return true
+  }
+
+  /**
    * Creates a game account for a specific user
    * @param {String<Discord ID>} uid Discord user id
    * @param {String<Faction Name>} faction Valid faction to join
@@ -45,19 +57,44 @@ module.exports = client => {
         betaTester: true,
         bounty: 0,
         credits: 0,
-        pos: {
-          x,
-          y
-        },
-        respawn: {
-          x,
-          y
-        },
+        pos: { x, y },
+        respawn: { x, y },
         kills: [],
         deaths: [],
         assets: [],
         titles: [],
         currentShip: {},
+        createAt: Date.now() / 1000
+      })
+    })
+  }
+
+  /**
+   * Generate a map tile in the database
+   * @param {Integer} xPos x position
+   * @param {Integer} yPos y position
+   */
+  game.createTile = (xPos, yPos) => {
+    return new Promise(async (resolve, reject) => {
+      if (game.doesTileExist(xPos, yPos)) return reject(new Error('Tile already has an account in the database.'))
+
+      // randomly generate planets
+
+      // randomly generate stations
+
+      // randomly generate asteroids
+
+      // randomly generate anomalies
+
+      return client.database.collection('map').insertOne({
+        pos: {
+          x: xPos,
+          y: yPos
+        },
+        anomalies: [],
+        planets: [],
+        asteroids: [],
+        stations: [],
         createAt: Date.now() / 1000
       })
     })
