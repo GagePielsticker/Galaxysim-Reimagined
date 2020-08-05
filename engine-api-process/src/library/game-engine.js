@@ -32,6 +32,9 @@ module.exports = client => {
       let alphaTester = false
       if (settings.alpha_testers.includes(uid)) alphaTester = true
 
+      const x = Math.floor(Math.random() * (factionEntry.spawn.x.max - factionEntry.spawn.x.min) + factionEntry.spawn.x.min)
+      const y = Math.floor(Math.random() * (factionEntry.spawn.y.max - factionEntry.spawn.y.min) + factionEntry.spawn.y.min)
+
       logger.success(`Created user account ${uid}.`)
 
       return client.database.collection('users').insertOne({
@@ -43,9 +46,15 @@ module.exports = client => {
         bounty: 0,
         credits: 0,
         pos: {
-          x: Math.floor(Math.random() * (factionEntry.spawn.x.max - factionEntry.spawn.x.min) + factionEntry.spawn.x.min),
-          y: Math.floor(Math.random() * (factionEntry.spawn.y.max - factionEntry.spawn.y.min) + factionEntry.spawn.y.min)
+          x,
+          y
         },
+        respawn: {
+          x,
+          y
+        },
+        kills: [],
+        deaths: [],
         assets: [],
         titles: [],
         currentShip: {},
